@@ -1,0 +1,17 @@
+{
+  "name": "weather_test_project",
+  "version": "1.0.0",
+  "description": "mocha + chai api testing",
+  "scripts": {
+    "test": "NOW=$(date +%m-%d-%y-%T) && node ./node_modules/mocha/bin/mocha --timeout=5000 --reporter mochawesome --reporter-options reportDir=reports/run_${NOW},reportFilename=test,overwrite=true,timestamp='isoDateTime'"
+  },
+  "author": "ahemb",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "superagent": "^3.8.3",
+    "mochawesome": "^3.0.3",
+    "request": "^2.83.0"
+  }
+}
