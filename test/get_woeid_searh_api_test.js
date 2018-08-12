@@ -12,7 +12,6 @@ describe('GET /api/location/(woeid) tests:', () => {
             expect(res.statusCode, 'Expect status code is correct').to.equal(200);
             expect(body, 'Expect body is object').to.be.an('object');
 
-
             expect(todayWeather, 'Expect response has property [weather_state_name] and correct type').to.have.property('weather_state_name').that.is.a('string');
             expect(todayWeather, 'Expect response has property [wind_speed] and correct type').to.have.property('wind_speed').that.is.a('number');
             expect(todayWeather, 'Expect response has property [wind_direction] and correct type').to.have.property('wind_direction').that.is.a('number');

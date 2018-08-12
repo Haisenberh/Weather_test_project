@@ -1,6 +1,7 @@
 # IntelliJ project files
 .idea
 *.iml
-.node_modules/
+.node_modules
 # Reports folder
 /reports/
+package-lock.json

@@ -17,10 +17,10 @@ describe('GET /api/location/search/(query) tests:', () => {
             expect(response, 'Expect response has property [woeid] and correct type').to.have.property('woeid').that.is.a('number');
 
             //Verify exact values
-            expect(response.title).to.equal(testData.city.sanFrancisco.title);
-            expect(response.latt_long).to.equal(testData.city.sanFrancisco.latt_long);
-            expect(response.location_type).to.equal(testData.city.sanFrancisco.location_type);
-            expect(response.woeid).to.equal(testData.city.sanFrancisco.woeid);
+            expect(response.title, 'Expect response has correct [title] value').to.equal(testData.city.sanFrancisco.title);
+            expect(response.latt_long, 'Expect response has correct [latt_long] value').to.equal(testData.city.sanFrancisco.latt_long);
+            expect(response.location_type, 'Expect response has correct [location_type] value').to.equal(testData.city.sanFrancisco.location_type);
+            expect(response.woeid, 'Expect response has correct [woeid] value').to.equal(testData.city.sanFrancisco.woeid);
             done();
         });
     });
